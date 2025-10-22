@@ -33,6 +33,12 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* 80s tie‑dyed mood ring palette */
+  --mood-happy: #ff6b6b;   /* bright red */
+  --mood-sad: #6b6bff;     /* bright blue */
+  --mood-excited: #ffb86c; /* orange */
+  --mood-relaxed: #6bff6b;  /* green */
+  --mood-unknown: #ff6bff;  /* magenta */
 }
 
 :root {
