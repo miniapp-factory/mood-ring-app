@@ -73,13 +73,13 @@ export default function QuizPage() {
     }
   };
 
+  // Updated thresholds for a more nuanced mood mapping
   const getMood = () => {
     const avg = score / (questions.length * 5); // 0-1
-    if (avg < 0.2) return "sad";
-    if (avg < 0.4) return "relaxed";
-    if (avg < 0.6) return "excited";
-    if (avg < 0.8) return "happy";
-    return "unknown";
+    if (avg < 0.25) return "sad";
+    if (avg < 0.5) return "relaxed";
+    if (avg < 0.75) return "excited";
+    return "happy";
   };
 
   return (
