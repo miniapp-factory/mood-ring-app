@@ -1,5 +1,6 @@
 import { description, title, url } from "@/lib/metadata";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +37,9 @@ export default function Home() {
     <main className="flex flex-col gap-3 place-items-center px-4">
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
+      <Link href="/quiz" className="mt-4 rounded-md bg-primary px-6 py-2 text-primary-foreground hover:bg-primary/90">
+        Start Quiz
+      </Link>
     </main>
   );
 }
